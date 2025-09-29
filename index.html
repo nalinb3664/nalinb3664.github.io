@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eshopping</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="light-mode">
+
+  <!-- Header -->
+  <header>
+    <h1>🛍️ Nalin:online shopping</h1>
+
+    <div class="controls">
+      <input type="text" id="searchBar" placeholder="Search products...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="clothes">Clothing</option>
+        <option value="electronics">Electronics</option>
+        <option value="books">Books</option>
+      </select>
+      <button id="themeToggle">🌙 Dark Mode</button>
+      <button id="viewCartBtn">🛒 View Cart</button>
+    </div>
+  </header>
+
+  <!-- Products Grid -->
+  <main id="productGrid" class="grid"></main>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <h3>Total: ₹<span id="cartTotal">0</span></h3>
+    </div>
+  </div>
+
+  <!-- Email Subscription Bar -->
+  <footer>
+    <div class="email-bar">
+      <h3>Subscribe to our Newsletter</h3>
+      <input type="email" id="emailInput" placeholder="Enter your email">
+      <button id="subscribeBtn">Subscribe</button>
+      <p id="emailMsg"></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
